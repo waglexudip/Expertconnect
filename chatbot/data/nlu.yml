@@ -33,6 +33,33 @@ nlu:
     - bye bye
     - see you later
 
+- intent: give_feedback
+  examples: |
+    - send feedback to site 
+    - give suggestions
+    - send suggestions
+    - give my feedback to site
+    - send my suggestions
+    - send my feedback to site
+    - i want you to give feedback
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - ok
+    - yeah
+    - do it
+    - of course
+    - yep
+    - okay
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - never
+    - donot
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -66,7 +93,15 @@ nlu:
     - site
     - your site
 
-
+- intent: feeds
+  examples: |
+    - myfeedback: make your ui better
+    - myfeedback: make like chatgpt
+    - myfeedback: this is very good keep it up
+    - myfeedback: i liked this project very much
+    - myfeedback:
+    - myfeedback
+   
 
 - intent: find_user
   examples: |
@@ -97,9 +132,9 @@ nlu:
     - @david
     - @rohit
     - @john
-    - @
-    - @@
-    - @user 
+    - @mulyankan
+    - @dip
+    - @john
 
 
 - intent: dev_cat

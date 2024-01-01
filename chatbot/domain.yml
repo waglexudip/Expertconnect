@@ -12,13 +12,17 @@ intents:
   - usermail
   - send_mail
   - user_info
+  - affirm
+  - give_feedback
+  - feeds
+  - deny
 
 responses:
   utter_iamabot:
     - text: "I am just a bot and i can only understand predefined text patterns."
 
   utter_greet:
-    - text: "Hey! How can i help you? I can assist you with : 1.recommending developers of different categories    2.search for user    3.send email to a particular user"
+    - text: "Hey! How can i help you? I can assist you with : 1.recommending developers of different categories    2.search for user    3.send email to a particular user  4.give your feedback to owner"
 
   utter_goodbye:
     - text: "Bye"
@@ -38,7 +42,10 @@ responses:
   utter_welcome:
     - text: "you are welcome."
 
-
+  utter_askf:
+    - text: "type your feedback like this:    myfeedback:<your actual feedback>"
+  utter_den:
+    - text: "ok"
  
 
 
@@ -52,7 +59,8 @@ actions:
 - action_userinfo
 - action_sendmail
 - action_askm
-
+- action_askfeed
+- action_mailfeed
 
 slots:
   cat:

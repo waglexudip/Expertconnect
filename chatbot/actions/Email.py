@@ -20,7 +20,7 @@ def Email(euser,message):
     headers={
         "Content-Type": "application/json"
     }
-    r = requests.get("http://localhost:5000/find/" + str(euser),headers=headers) 
+    r = requests.get("http://localhost:5000/find/" + euser,headers=headers) 
     r=r.json()
     if(len(r)== 0):
         return 'user doesnot exist'

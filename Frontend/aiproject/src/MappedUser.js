@@ -38,7 +38,7 @@ const imgarr =[
         type="primary"
         icon={<TransactionOutlined/>}
         
-      >{' '+rating}</Button>
+      >{' '+(rating.toFixed(1))}</Button>
       {/* <p className="profi">{rating}</p><TransactionOutlined /> */}
     </div>
   );

@@ -12,7 +12,11 @@ stories:
   - slot_was_set:
     - cat:  "Cloud architect"
   - action: action_gettop
-
+  - action: action_askfeed
+  - intent: affirm
+  - action: utter_askf
+  - intent: feeds
+  - action: action_mailfeed
 
 - story: ask username to search for
   steps:
@@ -20,6 +24,11 @@ stories:
   - action: utter_askuser
   - intent: user_info
   - action: action_userinfo
+  - action: action_askfeed
+  - intent: affirm
+  - action: utter_askf
+  - intent: feeds
+  - action: action_mailfeed
 
 - story: send email to user
   steps:
@@ -29,4 +38,15 @@ stories:
   - action: action_askm
   - intent: usermail
   - action: action_sendmail 
+  - action: action_askfeed
+  - intent: affirm
+  - action: utter_askf
+  - intent: feeds
+  - action: action_mailfeed
 
+- story:  give feedback
+  steps:
+  - intent: give_feedback
+  - action: utter_askf
+  - intent: feeds
+  - action: action_mailfeed

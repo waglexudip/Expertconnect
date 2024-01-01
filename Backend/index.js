@@ -62,25 +62,21 @@ app.get("/find/:user", async (req, res) => {
 app.post("/rate", async (req, res) => {
   const { token } = req.cookies;
   const { rat, ue, userin } = req.body;
-  const fg = await User.find({ username: ue });
+  var fg = await User.find({ username: ue });
 
-  var deg = (fg[0].rating)*(fg[0].totalraters) + rat;
-  var cc = (fg[0].totalraters) + 1;
-  var u = Number(deg);
-  var v = Number(cc);
+  const deg = fg[0].rating * fg[0].totalraters + rat;
+  const cc = fg[0].totalraters + 1;
+  // var u = deg;
+  // var v = cc;
 
-  up = Math.floor(u/v);
-  console.log(deg);
-  console.log(cc);
-  console.log(deg);
-
-    await User.findOneAndUpdate(
-      { username: ue },
-      { rating: up, totalraters: v }
-    );
-    
-    res.status(303).json("rating added");
-
+  const up = deg / cc;
+ 
+  while (fg) {
+    fg=null
+  await User.findOneAndUpdate({ username: ue }, { rating: up, totalraters: cc });
+  
+  }
+  res.status(303).json("rating added");
 });
 
 app.get("/findproject/:usernam", async (req, res) => {

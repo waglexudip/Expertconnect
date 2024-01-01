@@ -17,7 +17,7 @@ export default function Profile() {
     fetch(`http://localhost:5000/find/${username}`).then((response) => {
       response.json().then((Info) => {
         setProf(Info[0]);
-        // ue = prof.username;
+       
       });
     });
   }, []);
@@ -71,7 +71,7 @@ export default function Profile() {
                 {prof.field}
               </h3>
               <p style={{ color: "#0000FF", marginTop: "-1px" }}>
-                {prof.rating}
+                {(prof.rating).toFixed(1)}
               </p>
 
               <p style={{ color: "#00AFFF", marginTop: "-1px" }}>

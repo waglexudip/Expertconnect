@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+
+- story: user recomendation
+  steps:
+  - intent: developer_query
+  - action: utter_devquery
+  - intent: dev_cat
+    entities:
+    - cat:  "Cloud architect"
+  - slot_was_set:
+    - cat:  "Cloud architect"
+  - action: action_gettop
+
+
+- story: ask username to search for
+  steps:
+  - intent: find_user
+  - action: utter_askuser
+  - intent: user_info
+  - action: action_userinfo
+
+- story: send email to user
+  steps:
+  - intent: send_mail
+  - action: utter_usere
+  - intent: user_info
+  - action: action_askm
+  - intent: usermail
+  - action: action_sendmail 
+

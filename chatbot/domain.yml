@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - bot_challenge
+  - greet
+  - goodbye
+  - website_info
+  - developer_query
+  - find_user
+  - thank_u
+  - dev_cat
+  - usermail
+  - send_mail
+  - user_info
+
+responses:
+  utter_iamabot:
+    - text: "I am just a bot and i can only understand predefined text patterns."
+
+  utter_greet:
+    - text: "Hey! How can i help you? I can assist you with : 1.recommending developers of different categories    2.search for user    3.send email to a particular user"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_website_info:
+    - text: "This is a developers portfolio website with integrated rasa chatbot.This is an end-semester project of sudip and mulyankan.Users can show their projects here.If you have any query,feel free to email @waglesudip8@gmail.com"
+
+  utter_devquery:
+    - text: "Which category developer are you looking for?   1.Blockchain developer    2.cloud architect    3.App developer    4.data scientist    5.Frontend developer    6.backend developer    7.Fullstack developer  8.desktop developer "
+
+  utter_usere:
+    - text: "whom do you want me to send an email? type like this:  @username "
+
+  utter_askuser:
+    - text: "Give me the username to search for..Type like this:  @username"
+
+  utter_welcome:
+    - text: "you are welcome."
+
+
+ 
+
+
+
+    
+entities:
+- cat
+
+actions:
+- action_gettop
+- action_userinfo
+- action_sendmail
+- action_askm
+
+
+slots:
+  cat:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cat
+
+  # message:
+  #   type: text
+  #   mappings:
+  #   - type: custom
+
+  usere:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+
+
+
+
+
+  
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

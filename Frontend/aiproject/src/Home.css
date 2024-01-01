@@ -1,0 +1,366 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  height: 100vh;
+  background-color: black;
+}
+
+.inputic {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 29%;
+  height: 70%;
+  border-radius: 20px;
+}
+input {
+  outline: none;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+#ibut {
+  width: 62%;
+  margin-top: 36px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: max-content;
+}
+
+.siupbut{
+  width: auto;
+  padding: 5px 40px;
+  /* margin-top: 36px; */
+  border-radius: 10px;
+  font-size: 20px;
+  height: max-content;
+}
+
+
+.lginbut{
+  width: auto;
+  margin-left: 15px;
+  /* color: green; */
+  background-color: #ec2b2b;
+  /* margin-top: 36px; */
+  border-radius: 10px;
+  font-size: 20px;
+  height: max-content;
+}
+.pnsu {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#ibuti {
+  width: fit-content;
+  font-size: 19px;
+  background-color: #ffffff;
+  color: #258109;
+  border: none;
+  margin-left: 2px;
+}
+
+.tophome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.containerone {
+  background-color: #000000;
+  width: 100wh;
+  height: 100vh;
+}
+
+.hput {
+  width: 16vw;
+  border-radius: 10px;
+  color: crimson;
+  background-color: #abdaf0;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 10px;
+  font-style: normal;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+
+  color: black;
+}
+
+.xbut {
+  background-color: blueviolet;
+  color: white;
+  margin: 0px;
+  border: 0%;
+  font-size: 16px;
+  margin-top: 10px;
+  border: 0px;
+}
+
+.botui {
+  background-color: #ffffff;
+  width: 38vw;
+  height: 85vh;
+  display: flex;
+  margin-right: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.bothead {
+  background-color: #09be09;
+  color: aliceblue;
+  border-radius: 4px;
+}
+.botmain {
+  height: 89%;
+  overflow-y: auto;
+  background-color: #ffffff;
+  /* border-radius: 4px; */
+}
+.botvar {
+  width: 89%;
+  /* background-color: rgb(79, 79, 236); */
+  color: crimson;
+  /* border: none; */
+  border: 1px solid green;
+  margin: 1px 3px;
+  border-radius: 10px;
+  /* border-bottom: 1px solid blueviolet; */
+}
+
+.askbot {
+  display: flex;
+  margin-bottom: 1px;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* background-color: #87ceeb; */
+  /* border-radius: 6px; */
+}
+.usermes {
+  width: fit-content;
+  max-width: 70%;
+  margin-bottom: 5px;
+  color: white;
+  margin-left: auto;
+  margin-top: 4px;
+  height: fit-content;
+  border-radius: 16px;
+  margin-right: 5px;
+  padding: 8px 10px;
+  background-color: rgb(84, 84, 212);
+}
+.botmes {
+  width: fit-content;
+  max-width: 60%;
+  color: white;
+  margin-right: auto;
+  margin-left: 5px;
+  height: fit-content;
+  margin-bottom: 5px;
+  border-radius: 16px;
+  padding: 8px 10px;
+  background-color: rgb(25, 216, 19);
+}
+.homemid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.homebot {
+  margin-top: 120px;
+  margin-right: 10px;
+}
+.signupform{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49vw;
+  max-height: fit-content;
+  border-radius: 20px;
+}
+.signlog{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top:10px ;
+  margin-bottom: 20px;
+}
+
+.signuptop{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.signname{
+  width:42%;
+  padding-left: 8px;
+  border-radius: 0px;
+  margin: 20px 20px;
+  font-family: sans-serif;
+  font-size: medium;
+  border: none;
+  border-radius: 11px;
+  background-color: #b2ddf1;
+  /* border-bottom: 1px solid black; */
+}
+.signnam{
+  width:54%;
+  padding-left: 8px;
+  border-radius: 0px;
+  margin: 20px 20px;
+  margin-left: 150px;
+  font-family: sans-serif;
+  font-size: medium;
+  border: none;
+  border-radius: 11px;
+  background-color: #b2ddf1;
+  /* border-bottom: 1px solid black; */
+}
+
+.elects{
+  width: 22%;
+  height: fit-content;
+  margin-top: 13px;
+  margin-left: 8px;
+  margin-right: auto;
+  
+}
+
+.textput{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /* background-color: #e28cf3; */
+
+  /* background-color: aliceblue; */
+  border:1px solid black;
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.praf{
+  margin-left: auto;
+  color: blue;
+}
+.usdiv{
+  max-width: fit-content;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 49px;
+}
+
+.usersprof{
+  width: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80vh;
+  overflow-y: auto;
+}
+.propname{
+  color: white;
+}
+
+.profi{
+  color: #09be09;
+}
+.sobotop{
+  /* color: ; */
+    /* font-size: medium; */
+    
+}
+.sobo{
+  background-color: black;
+}
+
+.prome{
+  display: flex;
+   flex-direction: column;
+   justify-content: center; 
+  background-color: black;
+  width: 100vw;
+ max-height: max-content;
+}
+.medet{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start; */
+  margin-left: 30px;
+
+}
+.mps{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid blue;
+  margin-top: 10px;
+  max-width: 60vw;
+  padding:  10px 30px;
+  margin-bottom: 10px;
+}
+.las{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.lasbut{
+  margin-top: 50px;
+  margin-left: 100px;
+  background-color: #ec2b2b;
+}
+.prox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.proxbut{
+  background-color: #258109;
+  color: white;
+  padding: 5px 5px;
+  margin-left: 40px;
+  margin-top: -10px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.edv{
+  background-color: #000000;
+  height: 100vh;
+}
+.rat{
+  width: 5vw;
+}
+.ratdiv{
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.rab{
+  max-width: fit-content;
+  margin-top: 5px;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-cat",
+      "2": "I-cat",
+      "3": "L-cat",
+      "4": "U-cat",
+      "5": "B-message",
+      "6": "I-message",
+      "7": "L-message",
+      "8": "U-message",
+      "9": "B-usere",
+      "10": "I-usere",
+      "11": "L-usere",
+      "12": "U-usere",
+      "13": "B-username",
+      "14": "I-username",
+      "15": "L-username",
+      "16": "U-username",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-cat": 1,
+      "I-cat": 2,
+      "L-cat": 3,
+      "U-cat": 4,
+      "B-message": 5,
+      "I-message": 6,
+      "L-message": 7,
+      "U-message": 8,
+      "B-usere": 9,
+      "I-usere": 10,
+      "L-usere": 11,
+      "U-usere": 12,
+      "B-username": 13,
+      "I-username": 14,
+      "L-username": 15,
+      "U-username": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

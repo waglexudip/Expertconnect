@@ -1,0 +1,124 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - can you help me
+    - help me
+    - help
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: developer_query
+  examples: |
+    - different types of developers
+    - top rated developers
+    - top rated coders
+    - list the types of developers
+    - help me find the top rated developers 
+    - find top developers
+    - recommend me developers
+    - recommend coders
+    - recommend
+    - i want to know different developers in your website
+
+- intent: website_info
+  examples: |
+    - tell me about your website
+    - what is your website about
+    - what is your website about?
+    - website 
+    - your website
+    - tell me about your site?
+    - tell me about your site
+    - site
+    - your site
+
+
+
+- intent: find_user
+  examples: |
+    - tell me about user
+    - search for user 
+    - i want to know about an user 
+    - what do you know about
+    - search 
+    - search for 
+    
+- intent: usermail
+  examples: |
+    - message:this is a message sent through rasabot
+    - message:i liked your profile on expertconnect 
+    - message:would
+    - Message:
+
+- intent: thank_u
+  examples: |
+    - thank you
+    - thanks 
+
+- intent: user_info
+  examples: |
+    - @sudip
+    - @maxwel
+    - @virat
+    - @david
+    - @rohit
+    - @john
+    - @
+    - @@
+    - @user 
+
+
+- intent: dev_cat
+  examples: |
+    - [Cloud architect](cat)
+    - [Data scientist](cat)
+    - [Frontend developer](cat)
+    - [Backend developer](cat)
+    - [Fullstack developer](cat)
+    - [Desktop developer](cat)
+    - [Blockchain developer](cat)
+    - [App developer](cat)
+    
+  
+- intent: send_mail
+  examples: |
+    - can you send email to
+    - email 
+    - email user 
+    - send email to user
+    - i want you to send email to user 
+    - send email
